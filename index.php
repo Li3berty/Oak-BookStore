@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang = "vi">
+    <head>
+        <meta charset = "UTF-8">
+        <title>BookStore - Nhà sách trực tuyến cho mọi nhà!</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header class = "Header">
+            <div class = "Logo-Header">
+                <img src = "img/header/Logo.png" alt = "Logo">
+            </div>
+            <div class = "Search-Box">
+                <form action = "#">
+                    <input type = "text" placeholder = "Tìm kiếm...">
+                    <button type = "submit"><i class = "fas fa-search"></i></button>
+                </form>
+            </div>
+            <nav class = "Header-icons">
+                <div class = "Action-item">
+                    <div class = "Icon-circle">
+                        <i class = "fas fa-phone"></i>
+                    </div>
+                    <div class = "Text-content">
+                        <span class = "Title">0292 3898 167</span>
+                        <span class = "Subtitle">Hỗ trợ khách hàng</span>
+                    </div>
+                </div>
+                <div class = "Action-item">
+                    <div class = "Icon-circle">
+                        <i class = "fas fa-user"></i>
+                    </div>
+                    <div class = "Text-content">
+                        <span class = "Title">Đăng nhập</span>
+                        <span class = "Subtitle">Đăng ký</span>
+                    </div>
+                </div>
+                <div class = "Action-item">
+                    <div class = "Cart-icon">
+                        <i class = "fas fa-shopping-cart"></i>
+                        <span class = "Cart-badge">0</span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class = "Main">
+            <section class = "Menu-Section">
+                <nav class = "Nav-Menu">
+                    <ul class = "Menu-Tab">
+                        <li><a href="index.php" class = "active">Trang chủ</a></li>
+                        <li><a href="#">Danh mục <span class="arrow">▾</span></a></li>
+                        <li><a href="#">Sách bán chạy</a></li>
+                        <li><a href="#">Sách mới</a></li>
+                        <li><a href="#">Tác giá</a></li>
+                        <li><a href="#">Khuyến mãi</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class = "Banner-Section">
+                <div class = "Wrapper-Banner">
+                    <div class = "Main-Banner">
+                        <div class = "Hero-Banner">
+                            <img src="img/main/LargestBanner.png" alt="Banner-Lớn">
+                        </div>
+                    </div>
+                    <div class = "Secondary-Banner">
+                        <div class = "S-Banner">
+                            <img src="img/main/SecondaryBanner1.png" alt="Banner-Phụ-1">
+                        </div>
+                        <div class = "S-Banner">
+                            <img src="img/main/SecondaryBanner2.png" alt="Banner-Phụ-2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class = "Quick-Section">
+                <div class = "Quick-Features">
+                    <div class = "Quick-Items">
+                        <div class = "Quick-Icon">
+                            <i class = "fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class = "Quick-Text">
+                            <h4>Freeship</h4>
+                            <p>Đơn từ 200.000đ</p>
+                        </div>
+                    </div>
+                    <div class="Quick-Items">
+                        <div class="Quick-Icon">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                        <div class="Quick-Text">
+                            <h4>Mã giảm giá</h4>
+                            <p>Ưu đãi mỗi ngày</p>
+                        </div>
+                    </div>
+                    <div class="Quick-Items">
+                        <div class="Quick-Icon">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div class="Quick-Text">    
+                            <h4>Hàng chính hãng</h4>
+                            <p>Cam kết chất lượng</p>
+                        </div>
+                    </div>
+                    <div class="Quick-Items">
+                        <div class="Quick-Icon">
+                            <i class="fa-solid fa-rotate-left"></i>
+                        </div>
+                        <div class="Quick-Text">
+                            <h4>Đổi trả dễ dàng</h4>
+                            <p>Trong 7 ngày</p>
+                        </div>
+                    </div>
+                    <div class="Quick-Items">
+                        <div class="Quick-Icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="Quick-Text">
+                            <h4>Hỗ trợ 24/7</h4>
+                            <p>Tư vẫn miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class = "FlashSale-Section">
+                <div class = "FlashSale-Header">
+                    <a href="#" class = "Flash-Sale">
+                        <img src="img/main/flashsale.png" alt="FlashSale">
+                    </a>
+                </div>
+                <div class = "BookList">
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/thepdatoitheday.jpg" alt="Thép Đã Tôi Thế Đấy">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Thép Đã Tôi Thế Đấy</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/thepdatoitheday.jpg" alt="Thép Đã Tôi Thế Đấy">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Thép Đã Tôi Thế Đấy</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/thepdatoitheday.jpg" alt="Thép Đã Tôi Thế Đấy">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Thép Đã Tôi Thế Đấy</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/thepdatoitheday.jpg" alt="Thép Đã Tôi Thế Đấy">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Thép Đã Tôi Thế Đấy</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/thepdatoitheday.jpg" alt="Thép Đã Tôi Thế Đấy">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Thép Đã Tôi Thế Đấy</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class = "BestSelling-Section">
+                <div class = "BestSelling-Header">
+                    <h2>Sách bán chạy</h2>
+                    <a href="#" class = "View-All">Xem tất cả &#10140;</a>
+                </div>
+                <div class = "BookList">
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/thepdatoitheday.jpg" alt="Thép Đã Tôi Thế Đấy">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Thép Đã Tôi Thế Đấy</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/datrungphuongnam.jpg" alt="Đất Rừng Phương Nam">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Đất Rừng Phương Nam</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/lua&mau.jpg" alt="Lửa & Máu">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Lửa & Máu</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/hosomat.jpg" alt="Hồ Sơ Mật">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Hồ Sơ Mật</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "Book-Card">
+                        <div class = "Book-Image">
+                            <img src="img/Sodo.jpg" alt="Số Đỏ">
+                        </div>
+                        <div class = "Book-Info">
+                            <h3>Số Đỏ</h3>
+                            <p>Tên tác giả</p>
+                            <div class = "Book-Price">
+                                <span class = "NewPrice">50.000đ</span>
+                                <span class = "Price">100.000đ</span>
+                                <span class = "Discount">-50%</span>
+                            </div>
+                            <div class = "Book-Actions">
+                                <button class = "Btn-BuyNow">Mua ngay</button>
+                                <button class = "Btn-AddToCart"><i class = "fas fa-cart-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class = "Footer">
+            <div class = "Footer-Top">
+                <div class = "Logo-Footer">
+                    <img src = "img/header/Logo.png" alt = "Logo">
+                </div>
+                <div class = "Footer-About">
+                    <h3>Về Oak</h3>
+                    <ul class = "Menu-About">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class = "Footer-Policy">
+                    <h3>Chính sách dịch vụ</h3>
+                    <ul class = "Menu-Policy">
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class = "Footer-Support">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <ul class = "Menu-Support">
+                        <li><a href="#">Hotline: 0292 3898 167</a></li>
+                        <li><a href="#">Email: phonghanhchinh@ctuet.edu.vn</a></li>
+                        <li><a href="#">Địa chỉ: 256 Đ. Nguyễn Văn Cừ, Cái Khế, Cần Thơ 900000</a></li>
+                    </ul>
+                </div>
+                <div class = "Footer-Social">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <div class = "Social-Icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

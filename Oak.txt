@@ -1,0 +1,695 @@
+Thiết kế một website thương mại điện tử bán sách có tên **OAK – Hiệu sách trực tuyến cho mọi người!**
+
+Hãy thiết kế **UI/UX hoàn chỉnh trên Figma**, bao gồm cả **phân hệ Khách hàng (User / Front-end)** và **phân hệ Quản trị (Admin / Back-end)**. Tất cả các trang phải sử dụng cùng một Design System, cùng phong cách hình ảnh, màu sắc, typography, khoảng cách và component để tạo cảm giác đây là một hệ thống thống nhất.
+
+## 1. PHONG CÁCH THIẾT KẾ
+
+Phong cách tổng thể:
+
+* Hiện đại, sạch sẽ, chuyên nghiệp, thân thiện.
+* Mang cảm giác của một thương hiệu bookstore hiện đại.
+* Ưu tiên khả năng đọc nội dung và hình ảnh bìa sách.
+* Không thiết kế quá nhiều hiệu ứng hoặc chi tiết gây rối.
+* Layout rõ ràng, nhiều khoảng trắng hợp lý.
+* Giao diện desktop-first, sau đó có khả năng responsive.
+* Thiết kế phù hợp với website thương mại điện tử thực tế.
+
+### Màu sắc thương hiệu
+
+Màu chủ đạo:
+
+* Dark Green / Oak Green: #307A3A
+* Green đậm cho hover và button: #256331
+* Background chính: #F8F9F6
+* White: #FFFFFF
+* Text chính: #222222
+* Text phụ: #666666
+* Border: #E5E5E5
+* Màu giảm giá / Flash Sale: #E54848
+* Màu cảnh báo: #F59E0B
+
+Không sử dụng quá nhiều màu khác ngoài Design System.
+
+### Typography
+
+Sử dụng font sans-serif hiện đại, dễ đọc như Inter hoặc tương đương.
+
+Phân cấp:
+
+* Heading lớn: 32–40px
+* Heading section: 24–28px
+* Heading card: 16–18px
+* Body: 14–16px
+* Caption: 12–13px
+
+## 2. DESIGN SYSTEM
+
+Tạo các component có thể tái sử dụng:
+
+* Header
+* Logo OAK
+* Navigation menu
+* Search bar
+* User account button
+* Cart button + badge số lượng
+* Primary button
+* Secondary button
+* Product card
+* Book cover
+* Category card
+* Rating / Star rating
+* Price
+* Discount badge
+* Flash Sale badge
+* Quantity selector
+* Filter checkbox
+* Select dropdown
+* Pagination
+* Breadcrumb
+* Banner
+* Modal
+* Toast notification
+* Form input
+* Textarea
+* Table
+* Status badge
+* Sidebar
+* Admin sidebar
+* Admin topbar
+* Tabs
+* Card statistic
+* Chart container
+
+Các component phải có trạng thái:
+Default, Hover, Active, Disabled, Error, Focus.
+
+## 3. PHÂN HỆ KHÁCH HÀNG – USER / FRONT-END
+
+Thiết kế khoảng 10–12 trang chính.
+
+### PAGE 01 – TRANG CHỦ / HOME
+
+Header:
+
+* Logo OAK
+* Menu: Trang chủ, Danh mục, Sách mới, Bán chạy
+* Search bar với placeholder: "Tìm kiếm sách, tác giả, ISBN..."
+* Icon tài khoản
+* Icon giỏ hàng
+* Badge số lượng sản phẩm trong giỏ
+
+Main:
+
+* Hero Banner lớn
+* Banner quảng cáo chương trình khuyến mãi
+* Section Flash Sale
+* Countdown timer
+* Product cards trong Flash Sale
+* Section "Sách mới"
+* Section "Sách bán chạy"
+* Section "Danh mục nổi bật"
+* Banner phụ FreeShip
+* Banner Flash Sale
+* Section đánh giá / feedback khách hàng
+
+Product Card cần hiển thị:
+
+* Ảnh bìa
+* Badge giảm giá
+* Tên sách
+* Tác giả
+* Rating
+* Giá cũ
+* Giá hiện tại
+* Nút "Thêm vào giỏ"
+
+Footer:
+
+* Giới thiệu OAK
+* Danh mục
+* Chính sách
+* Liên hệ
+* Email
+* Điện thoại
+* Địa chỉ
+* Social icons
+
+### PAGE 02 – DANH MỤC / SHOP
+
+Layout:
+
+* Breadcrumb
+* Tiêu đề danh mục
+* Sidebar filter
+* Khu vực danh sách sản phẩm
+
+Filter:
+
+* Khoảng giá
+* Tác giả
+* Nhà xuất bản
+* Rating
+* Danh mục
+* Tình trạng còn hàng
+
+Toolbar:
+
+* Tổng số sản phẩm
+* Sort: Phổ biến, Giá tăng dần, Giá giảm dần, Mới nhất
+* Grid/List view
+
+Hiển thị Product Card dạng grid 4 cột.
+
+### PAGE 03 – SEARCH RESULTS
+
+Thiết kế trang kết quả tìm kiếm.
+
+Ví dụ:
+" Kết quả tìm kiếm cho: Java "
+
+Hiển thị:
+
+* Từ khóa tìm kiếm
+* Số lượng kết quả
+* Filter
+* Sort
+* Danh sách sách phù hợp
+* Pagination
+
+### PAGE 04 – PRODUCT DETAIL
+
+Thiết kế trang chi tiết sách.
+
+Bố cục:
+
+* Breadcrumb
+* Khu vực ảnh sách lớn
+* Gallery ảnh
+* Tên sách
+* Rating
+* Số lượt đánh giá
+* Tác giả
+* Nhà xuất bản
+* ISBN
+* Ngày xuất bản
+* Giá bán
+* Giá cũ
+* Phần trăm giảm
+* Tình trạng kho
+* Quantity selector
+* Button "Thêm vào giỏ hàng"
+* Button "Mua ngay"
+
+Bên dưới:
+
+* Giới thiệu / mô tả sách
+* Thông tin chi tiết
+* Đánh giá khách hàng
+* Rating breakdown
+* Comment list
+* Form viết đánh giá
+
+### PAGE 05 – CART
+
+Trang giỏ hàng.
+
+Hiển thị:
+
+* Danh sách sản phẩm
+* Ảnh sách
+* Tên sách
+* Đơn giá
+* Quantity selector
+* Thành tiền
+* Xóa sản phẩm
+
+Sidebar tổng kết:
+
+* Tạm tính
+* Phí vận chuyển
+* Tổng tiền
+* Button "Tiến hành thanh toán"
+
+### PAGE 06 – CHECKOUT
+
+Trang thanh toán.
+
+Chia layout thành 2 phần:
+
+Thông tin giao hàng:
+
+* Họ tên
+* Số điện thoại
+* Email
+* Tỉnh / Thành phố
+* Quận / Huyện
+* Phường / Xã
+* Địa chỉ chi tiết
+* Ghi chú đơn hàng
+
+Phương thức thanh toán:
+
+* COD
+* MoMo
+* VNPAY
+* Bank Transfer
+
+Bên phải:
+
+* Order Summary
+* Danh sách sản phẩm
+* Tạm tính
+* Phí vận chuyển
+* Tổng tiền
+* Button "Đặt hàng"
+
+### PAGE 07 – ORDER SUCCESS
+
+Thiết kế màn hình xác nhận đặt hàng thành công.
+
+Hiển thị:
+
+* Icon success lớn
+* "Đặt hàng thành công!"
+* Mã đơn hàng
+* Tổng tiền
+* Phương thức thanh toán
+* Địa chỉ giao hàng
+* Button "Xem đơn hàng"
+* Button "Tiếp tục mua sắm"
+
+### PAGE 08 – LOGIN / REGISTER
+
+Thiết kế giao diện authentication hiện đại.
+
+Login:
+
+* Email / Username
+* Password
+* Remember me
+* Quên mật khẩu
+* Button Đăng nhập
+
+Register:
+
+* Họ tên
+* Email
+* Số điện thoại
+* Password
+* Confirm password
+* Điều khoản sử dụng
+* Button Đăng ký
+
+Thiết kế Login và Register đồng bộ.
+
+### PAGE 09 – PROFILE
+
+Trang tài khoản cá nhân.
+
+Sidebar:
+
+* Thông tin cá nhân
+* Đơn hàng
+* Đổi mật khẩu
+* Đăng xuất
+
+Main:
+
+* Avatar
+* Họ tên
+* Email
+* Số điện thoại
+* Địa chỉ
+* Button "Cập nhật thông tin"
+
+Tab đổi mật khẩu:
+
+* Mật khẩu hiện tại
+* Mật khẩu mới
+* Xác nhận mật khẩu
+
+### PAGE 10 – ORDER HISTORY
+
+Hiển thị lịch sử mua hàng.
+
+Table/Card:
+
+* Mã đơn
+* Ngày đặt
+* Số sản phẩm
+* Tổng tiền
+* Trạng thái
+
+Status:
+
+* Chờ duyệt
+* Đang xử lý
+* Đang giao
+* Đã hoàn thành
+* Đã hủy
+
+Click vào đơn hàng để xem chi tiết.
+
+### PAGE 11 – STATIC PAGES
+
+Thiết kế các trang:
+
+* Giới thiệu OAK
+* Chính sách đổi trả
+* Liên hệ
+
+Trang Contact:
+
+* Form liên hệ
+* Họ tên
+* Email
+* Số điện thoại
+* Nội dung
+* Button Gửi liên hệ
+* Thông tin liên hệ của cửa hàng
+
+## 4. PHÂN HỆ ADMIN / BACK-END
+
+Thiết kế Admin Dashboard sử dụng layout riêng nhưng vẫn giữ nhận diện thương hiệu OAK.
+
+Admin layout:
+
+* Sidebar bên trái
+* Topbar
+* Main content
+* Notification
+* Avatar Admin
+* Breadcrumb
+
+Sidebar:
+
+* Dashboard
+* Sách
+* Danh mục
+* Đơn hàng
+* Khách hàng
+* Banner
+* Flash Sale
+* Cài đặt
+* Đăng xuất
+
+### ADMIN PAGE 01 – DASHBOARD
+
+Dashboard thống kê:
+
+Statistic cards:
+
+* Tổng doanh thu
+* Tổng đơn hàng
+* Tổng sản phẩm
+* Tổng khách hàng
+
+Charts:
+
+* Doanh thu theo ngày / tháng
+* Số lượng đơn hàng
+* Sản phẩm bán chạy
+
+Additional:
+
+* Recent Orders
+* Top Selling Books
+* New Customers
+
+### ADMIN PAGE 02 – PRODUCT MANAGEMENT
+
+Trang quản lý sách.
+
+Table:
+
+* ID
+* Ảnh
+* Tên sách
+* Tác giả
+* Danh mục
+* Giá
+* Tồn kho
+* Trạng thái
+* Actions
+
+Actions:
+
+* Xem
+* Sửa
+* Xóa
+
+Button:
+"+ Thêm sách"
+
+Form thêm / sửa sách:
+
+* Tên sách
+* ISBN
+* Tác giả
+* Nhà xuất bản
+* Danh mục
+* Mô tả
+* Giá
+* Giá khuyến mãi
+* Tồn kho
+* Hình ảnh
+* Ngày xuất bản
+
+### ADMIN PAGE 03 – CATEGORY MANAGEMENT
+
+Table:
+
+* ID
+* Tên danh mục
+* Mô tả
+* Số lượng sách
+* Trạng thái
+* Actions
+
+Actions:
+
+* Thêm
+* Sửa
+* Xóa
+
+### ADMIN PAGE 04 – ORDER MANAGEMENT
+
+Table:
+
+* Mã đơn
+* Khách hàng
+* Ngày đặt
+* Tổng tiền
+* Phương thức thanh toán
+* Trạng thái
+* Actions
+
+Actions:
+
+* Xem chi tiết
+* Duyệt đơn
+* Cập nhật trạng thái
+* Hủy đơn
+
+Order Detail:
+
+* Thông tin khách hàng
+* Địa chỉ giao hàng
+* Danh sách sản phẩm
+* Tổng tiền
+* Timeline trạng thái đơn hàng
+
+### ADMIN PAGE 05 – USER MANAGEMENT
+
+Table:
+
+* ID
+* Avatar
+* Họ tên
+* Email
+* Số điện thoại
+* Số đơn hàng
+* Ngày đăng ký
+* Trạng thái
+* Actions
+
+Actions:
+
+* Xem thông tin
+* Khóa tài khoản
+* Mở khóa tài khoản
+
+### ADMIN PAGE 06 – MARKETING MANAGEMENT
+
+Thiết kế quản lý Banner.
+
+Banner table:
+
+* Banner preview
+* Tên banner
+* Vị trí
+* Ngày bắt đầu
+* Ngày kết thúc
+* Trạng thái
+* Actions
+
+Form:
+
+* Upload banner
+* Tiêu đề
+* Nội dung
+* Link
+* Thời gian hiển thị
+* Trạng thái
+
+### ADMIN PAGE 07 – FLASH SALE MANAGEMENT
+
+Hiển thị:
+
+* Chương trình Flash Sale hiện tại
+* Thời gian bắt đầu
+* Thời gian kết thúc
+* Countdown
+
+Danh sách sách Flash Sale:
+
+* Ảnh
+* Tên sách
+* Giá gốc
+* Giá Flash Sale
+* % giảm
+* Số lượng
+* Trạng thái
+
+Actions:
+
+* Thêm sản phẩm
+* Sửa
+* Xóa
+* Bật / tắt Flash Sale
+
+## 5. UX FLOW
+
+Thiết kế và liên kết prototype giữa các trang.
+
+Customer flow:
+
+Home
+→ Category
+→ Product Detail
+→ Add to Cart
+→ Cart
+→ Checkout
+→ Order Success
+→ Order History
+
+Authentication flow:
+
+Login
+→ Profile
+→ Order History
+
+Admin flow:
+
+Login
+→ Dashboard
+→ Product Management
+→ Category Management
+→ Order Management
+→ User Management
+→ Marketing Management
+→ Flash Sale Management
+
+## 6. RESPONSIVE
+
+Thiết kế Desktop trước với frame khoảng:
+**1440 × 1024 px**
+
+Sau đó tạo responsive layout cho:
+
+* Tablet
+* Mobile
+
+Mobile cần:
+
+* Hamburger menu
+* Search bar thu gọn
+* Cart icon
+* Product grid 2 cột
+* Sidebar filter chuyển thành modal / drawer
+* Admin sidebar chuyển thành mobile drawer
+
+## 7. YÊU CẦU UI
+
+Sử dụng:
+
+* Auto Layout
+* Components
+* Variants
+* Constraints
+* Reusable styles
+* Grid system
+* Consistent spacing
+
+Ưu tiên:
+
+* 8px spacing system
+* Border radius khoảng 8–12px
+* Shadow nhẹ
+* Card rõ ràng
+* Button dễ nhận biết
+* Typography có hierarchy rõ ràng
+
+Không sử dụng:
+
+* Gradient quá mạnh
+* Màu neon
+* Quá nhiều animation
+* Layout rối
+* Component không nhất quán
+* Quá nhiều màu sắc ngoài brand palette
+
+## 8. KẾT QUẢ MONG MUỐN
+
+Tạo một bộ UI/UX hoàn chỉnh cho **Oak BookStore**, bao gồm:
+
+CUSTOMER:
+Home
+Category
+Search Results
+Product Detail
+Cart
+Checkout
+Order Success
+Login
+Register
+Profile
+Order History
+About
+Return Policy
+Contact
+
+ADMIN:
+Dashboard
+Product Management
+Category Management
+Order Management
+User Management
+Banner Management
+Flash Sale Management
+
+Tất cả các trang phải có:
+
+* Navigation rõ ràng
+* Thành phần giao diện nhất quán
+* Có trạng thái hover/focus/active
+* Có prototype navigation giữa các trang
+* Có reusable components
+* Có Design System
+* Có responsive layout
+* Thiết kế đủ chi tiết để Frontend Developer có thể dựa vào Figma để triển khai bằng HTML/CSS/Java
+
+Tên thương hiệu trên giao diện: **Oak**
+Slogan: **"Hiệu sách trực tuyến cho mọi người!"**
+
+Ưu tiên cảm giác của một website bán sách thực tế, hiện đại và chuyên nghiệp nhưng vẫn phù hợp với một đồ án đại học.
